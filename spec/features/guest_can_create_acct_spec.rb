@@ -1,9 +1,6 @@
 require 'rails_helper'
 
 feature "Signing up" do
-  background do
-
-  end
 
   scenario "Signing up with correct creditionals" do
     visit '/users/new'
