@@ -26,8 +26,6 @@ feature "Admin Category Creation" do
                         password: 'password',
                         role: 1)
 
-    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
-
     visit '/login'
 
     fill_in "Username", with: admin.username
@@ -40,11 +38,18 @@ feature "Admin Category Creation" do
 
     expect(page).to have_content("Create a New Category")
 
-    # expect(current_path).to eq new_admin_category_path
+    expect(current_path).to eq new_admin_category_path
+
+    fill_in "Name", with: "Pizza Recipes"
+    fill_in "Description", with: "Delicious pizza recipes for everyone"
+    click_button "Create Category"
+
+    expect(page).to have_content("Pizza Recipes")
+    expect(page).to have_content("Delicious pizza recipes for everyone")
+    expect(admin.categories.count).to eq 1
   end
 
   scenario "user cannot category index" do
-
     visit admin_categories_path
 
     expect(page).to have_content("404")
