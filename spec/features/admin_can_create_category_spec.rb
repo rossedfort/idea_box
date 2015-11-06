@@ -29,5 +29,11 @@ feature "Signing in" do
     assert page.has_content?("All Categories")
   end
 
+  scenario "user cannot category index" do
+
+    visit admin_categories_path
+
+    assert page.has_content?("404")
+  end
 
 end
