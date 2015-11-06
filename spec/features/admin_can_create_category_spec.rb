@@ -1,9 +1,6 @@
 require 'rails_helper'
 
 feature "Admin Category Creation" do
-  background do
-
-  end
 
   scenario "logged in admin sees category index" do
     admin = User.create(first_name: 'Ross',
@@ -18,15 +15,29 @@ feature "Admin Category Creation" do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
     visit admin_categories_path
 
-    assert page.has_content?("All Categories")
-    assert page.has_content?("Farm Animals")
+    expect(page).to have_content("All Categories")
+    expect(page).to have_content("Farm Animals")
+  end
+
+  scenario "logged in admin can create a category" do
+    admin = User.create(first_name: 'Emily',
+                last_name: 'Dowdle',
+                username: 'emily',
+                password: 'password',
+                role: 1)
+
+    visit admin_categories_path
+
+    click_link "Create New Category"
+
+    expect(current_path).to eq new_admin_categories_path
   end
 
   scenario "user cannot category index" do
 
     visit admin_categories_path
 
-    assert page.has_content?("404")
+    expect(page).to have_content("404")
   end
 
 end
