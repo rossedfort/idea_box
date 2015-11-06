@@ -8,9 +8,16 @@
       "/Users/rossedfort/code/mod_2/projects/idea_box/app/models/category.rb": [
         1,
         1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
         null
       ],
       "/Users/rossedfort/code/mod_2/projects/idea_box/app/models/idea.rb": [
+        1,
         1,
         1,
         null,
@@ -43,11 +50,11 @@
         1,
         null,
         1,
-        28,
+        150,
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         null
@@ -67,7 +74,7 @@
         1,
         null,
         1,
-        1,
+        2,
         null,
         null,
         null
@@ -166,6 +173,6 @@
         null
       ]
     },
-    "timestamp": 1446779585
+    "timestamp": 1446782525
   }
 }
