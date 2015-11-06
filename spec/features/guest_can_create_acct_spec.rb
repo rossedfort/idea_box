@@ -13,7 +13,7 @@ feature "Signing up" do
 
     click_button 'Sign up'
 
-    expect(page).to have_content 'Welcome Ross'
+    expect(page).to have_content 'Hello Ross!'
   end
 
   scenario "Signing up with correct creditionals from root path" do
@@ -28,6 +28,6 @@ feature "Signing up" do
 
     click_button 'Sign up'
 
-    expect(page).to have_content 'Welcome Ross'
+    expect(page).to have_content 'Hello Ross!'
   end
 end

@@ -2,29 +2,50 @@
 <html>
 <head>
   <title>IdeaBox</title>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <div>
-  <% if current_user %>
-    <%= link_to "Logout", logout_path, method: :delete %>
-  <% else %>
-    <%= link_to "Login", login_path %>
-  <% end %>
+  <nav>
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li> <%= link_to 'Home', root_path %> </li>
+        <% if current_user %>
+          <li><%= link_to "Logout", logout_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to "Login", login_path %></li>
+        <% end %>
+      </ul>
+    </div>
+  </nav>
 </div>
 
-<div id="goodbye">
-  <%= flash[:signout] %>
+<div id="goodbye" class="center">
+  <p>
+    <%= flash[:signout] %>
+  </p>
 </div>
-<div id="message">
-  <%= flash[:message] %>
+<div id="message" class="center">
+  <p>
+    <%= flash[:message] %>
+  </p>
 </div>
-<div id="errors">
-  <%= flash[:error] %>
+<div id="errors" class="center">
+  <p>
+    <%= flash[:error] %>
+  </p>
 </div>
-<%= yield %>
-
+<div class="container">
+  <%= yield %>
+</div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>
