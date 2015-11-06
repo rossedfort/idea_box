@@ -28,5 +28,7 @@ feature 'create idea' do
 
     expect(page).to have_content 'Idea Saved!'
     expect(page).to have_content 'Your Idea!'
+    expect(page).to have_content 'Great Idea'
+    expect(page).to have_content 'What a great idea'
   end
 end
