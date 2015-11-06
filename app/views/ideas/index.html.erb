@@ -1,0 +1,10 @@
+<h1>My Ideas</h1>
+
+<div id="ideas">
+  <% @ideas.each do |idea| %>
+    <%= idea.name %>
+    <%= idea.description %>
+  <% end %>
+</div>
+
+<%= link_to 'New Idea', new_idea_path %>

@@ -7,5 +7,8 @@ class User < ActiveRecord::Base
                          uniqueness: true
     validates :password, presence: true
 
+    has_many :ideas
+    has_many :categories
 
+    enum role: %w(default admin)
 end

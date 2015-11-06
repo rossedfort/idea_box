@@ -15,7 +15,7 @@ feature "Signing in" do
       fill_in 'Password', :with => 'password'
     end
     click_button 'Sign in'
-    expect(page).to have_content 'Welcome Ross'
+    expect(page).to have_content 'Hello Ross!'
   end
 
   scenario "Signing in with incorrect username" do
