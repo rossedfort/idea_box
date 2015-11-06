@@ -16,6 +16,10 @@ class IdeasController < ApplicationController
     @idea = Idea.find(params[:id])
   end
 
+  def index
+    @ideas = User.find(session[:user_id]).ideas
+  end
+
   private
 
   def idea_params
