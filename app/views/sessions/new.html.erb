@@ -1,11 +1,15 @@
-<div id="session">
+<div class="center">
+  <h1>Login!</h1>
+</div>
 
-<%= form_for(:session, url: login_path) do |f| %>
-  <%= f.label :username %>
-  <%= f.text_field :username %>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-  <%= f.submit "Sign in" %>
-<% end %>
-
+<div class="row center">
+  <div id="session" class="col s6 offset-s3">
+    <%= form_for(:session, url: login_path) do |f| %>
+      <%= f.label :username %>
+      <%= f.text_field :username %>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+      <%= f.submit "Sign in" %>
+    <% end %>
+  </div>
 </div>

@@ -13,6 +13,21 @@ feature "Signing up" do
 
     click_button 'Sign up'
 
-    expect(page).to have_content 'Welcome Ross'
+    expect(page).to have_content 'Hello Ross!'
+  end
+
+  scenario "Signing up with correct creditionals from root path" do
+    visit root_path
+
+    within("#login") do
+      fill_in 'First name', :with => 'Ross'
+      fill_in 'Last name', :with => 'Edfort'
+      fill_in 'Username', :with => 'rossedfort'
+      fill_in 'Password', :with => 'password'
+    end
+
+    click_button 'Sign up'
+
+    expect(page).to have_content 'Hello Ross!'
   end
 end
