@@ -39,6 +39,7 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'byebug'
+  gem 'rspec-mocks'
   gem 'simplecov'
   gem 'faker'
 end
