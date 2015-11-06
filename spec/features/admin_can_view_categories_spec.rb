@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature "Admin Category Creation" do
+feature "Admin can view individual categories and details" do
   background do
 
   end
@@ -19,14 +19,20 @@ feature "Admin Category Creation" do
     visit admin_categories_path
 
     assert page.has_content?("All Categories")
-    assert page.has_content?("Farm Animals")
+
+    click_link "Farm Animals"
+
+    within("#category-details") do
+      expect(page).to have_content 'Farm Animals'
+      expect(page).to have_content 'Awesome stuff about cows, goats and chickens'
+    end
   end
 
   scenario "user cannot category index" do
 
     visit admin_categories_path
 
-    assert page.has_content?("404")
+    expect(page).to have_content '404'
   end
 
 end
