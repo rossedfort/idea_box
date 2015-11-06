@@ -40,6 +40,7 @@ group :development, :test do
   gem 'launchy'
   gem 'byebug'
   gem 'simplecov'
+  gem 'faker'
 end
 
 group :development do

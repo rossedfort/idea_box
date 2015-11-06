@@ -1,10 +1,11 @@
-<h1>My Ideas</h1>
+<div class="center">
+  <h1>My Ideas</h1>
+</div>
 
-<div id="ideas">
+<div id="ideas" class="center">
   <% @ideas.each do |idea| %>
     <%= idea.name %>
     <%= idea.description %>
   <% end %>
-</div>
-
 <%= link_to 'New Idea', new_idea_path %>
+</div>
