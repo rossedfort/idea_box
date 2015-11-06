@@ -5,6 +5,11 @@
         1,
         null
       ],
+      "/Users/rossedfort/code/mod_2/projects/idea_box/app/models/category.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/rossedfort/code/mod_2/projects/idea_box/app/models/idea.rb": [
         1,
         1,
@@ -24,6 +29,47 @@
         1,
         null,
         1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/rossedfort/code/mod_2/projects/idea_box/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        28,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/rossedfort/code/mod_2/projects/idea_box/app/controllers/admin/categories_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/rossedfort/code/mod_2/projects/idea_box/app/controllers/admin/base_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/rossedfort/code/mod_2/projects/idea_box/app/controllers/users_controller.rb": [
@@ -53,20 +99,6 @@
         null,
         1,
         2,
-        null,
-        null
-      ],
-      "/Users/rossedfort/code/mod_2/projects/idea_box/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        28,
-        null,
         null,
         null
       ],
@@ -134,6 +166,6 @@
         null
       ]
     },
-    "timestamp": 1446778521
+    "timestamp": 1446779585
   }
 }

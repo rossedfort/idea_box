@@ -2,10 +2,13 @@
   <h1>My Ideas</h1>
 </div>
 
-<div id="ideas" class="center">
-  <% @ideas.each do |idea| %>
-    <%= idea.name %>
-    <%= idea.description %>
+<div id="ideas">
+  <% @ideas.each_with_index do |idea, index| %>
+  <h5>Idea <%= index %> </h5>
+  <ul>
+  <li>Name: <%= idea.name %></li>
+  <li>Description: <%= idea.description %></li>
+  </ul>
   <% end %>
 <%= link_to 'New Idea', new_idea_path %>
 </div>

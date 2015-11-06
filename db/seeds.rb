@@ -10,6 +10,7 @@ class Seed
   def initialize
     generate_users
     generate_ideas
+    generate_categories
   end
 
   def generate_users
@@ -32,14 +33,23 @@ class Seed
     end
   end
 
-  def generate_songs
+  def generate_ideas
     50.times do |_i|
       idea = Idea.create(name: Faker::Lorem.word,
                          description: Faker::Lorem.sentence,
-                         user_id: rand(1..5),
+                         user_id: rand(1..5)
                         )
 
       puts "#{idea.name} created"
+    end
+  end
+
+  def generate_categories
+    10.times do |i|
+      category = Category.create(name: Faker::Lorem.word,
+                                 description: Faker::Lorem.sentence)
+
+      puts "#{category.name} created!"
     end
   end
 end
