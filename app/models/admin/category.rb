@@ -1,4 +1,5 @@
 class Admin::Category < ActiveRecord::Base
+  has_many :ideas
   belongs_to :user
 
   validates :name, presence: true,

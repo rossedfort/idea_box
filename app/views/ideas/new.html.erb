@@ -4,6 +4,10 @@
     <%= f.text_field  :name %>
     <%= f.label :description %>
     <%= f.text_field :description %>
+    <%= f.label :category %>
+    <div class="input-field browser-default">
+      <%= f.collection_select :category_id, Admin::Category.all, :id, :name, {}, {class: "browser-default"} %>
+    </div>
     <%= f.submit 'Create Idea' %>
   <% end %>
 </div>
