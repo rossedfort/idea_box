@@ -3,5 +3,6 @@
 <h1>All Categories</h1>
 
 <% @categories.each do |subj| %>
-  <%= link_to subj.name, admin_category_path(subj.id) %>
+  <h4><%= link_to subj.name, admin_category_path(subj.id) %></h4></br>
+  <%= link_to "Delete", admin_category_path(subj.id), method: :delete %>
 <% end %>

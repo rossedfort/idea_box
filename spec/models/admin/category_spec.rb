@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Category, type: :model do
+RSpec.describe Admin::Category, type: :model do
   describe "category" do
     it "is valid" do
       admin = User.create(first_name:"Emily",
