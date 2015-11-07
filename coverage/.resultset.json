@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "RSpec": {
     "coverage": {
@@ -215,3 +216,184 @@
     "timestamp": 1446862760
   }
 }
+||||||| merged common ancestors
+=======
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/rossedfort/code/mod_2/projects/idea_box/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/rossedfort/code/mod_2/projects/idea_box/app/models/category.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/rossedfort/code/mod_2/projects/idea_box/app/models/idea.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/rossedfort/code/mod_2/projects/idea_box/app/models/user.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/rossedfort/code/mod_2/projects/idea_box/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        150,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/rossedfort/code/mod_2/projects/idea_box/app/controllers/admin/categories_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/rossedfort/code/mod_2/projects/idea_box/app/controllers/admin/base_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/rossedfort/code/mod_2/projects/idea_box/app/controllers/users_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        7,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/rossedfort/code/mod_2/projects/idea_box/app/controllers/welcome_controller.rb": [
+        1,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/rossedfort/code/mod_2/projects/idea_box/app/controllers/sessions_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        7,
+        7,
+        5,
+        5,
+        null,
+        2,
+        2,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/rossedfort/code/mod_2/projects/idea_box/app/controllers/ideas_controller.rb": [
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1446782525
+  }
+}
+>>>>>>> user-flow
