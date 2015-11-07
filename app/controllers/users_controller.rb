@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:message] = "Thanks for signing up!"
-      redirect_to @user
+      redirect_to login_path
     else
       flash[:error] = "Please try again."
       render :new
@@ -16,7 +16,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+    @user = User.find(session[:user_id])
   end
 
 

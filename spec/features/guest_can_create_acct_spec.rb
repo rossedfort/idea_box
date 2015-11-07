@@ -12,8 +12,8 @@ feature "Signing up" do
     end
 
     click_button 'Sign up'
-
-    expect(page).to have_content 'Hello Ross!'
+    save_and_open_page
+    expect(page).to have_content 'Thanks for signing up!'
   end
 
   scenario "Signing up with correct creditials from root path" do
@@ -28,7 +28,7 @@ feature "Signing up" do
 
     click_button 'Sign up'
 
-    expect(page).to have_content 'Hello Ross!'
+    expect(page).to have_content 'Thanks for signing up!'
   end
 
   scenario "Signing up with incorrect creditionals" do
@@ -41,6 +41,6 @@ feature "Signing up" do
 
     click_button 'Sign up'
 
-    expect(page).to_not have_content 'Welcome Ross'
+    expect(page).to_not have_content 'Thanks for signing up!'
   end
 end
