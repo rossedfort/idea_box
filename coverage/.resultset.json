@@ -20,15 +20,20 @@
         1,
         null
       ],
-      "/Users/emilydowdle1/Dropbox/turing_work/idea_box/app/models/idea.rb": [
+      "/Users/emilydowdle1/Dropbox/turing_work/idea_box/app/models/admin/image.rb": [
         1,
         1,
         null,
         1,
+        null,
+        null,
         1,
         null
       ],
-      "/Users/emilydowdle1/Dropbox/turing_work/idea_box/app/models/image.rb": [
+      "/Users/emilydowdle1/Dropbox/turing_work/idea_box/app/models/idea.rb": [
+        1,
+        1,
+        null,
         1,
         1,
         null
@@ -44,6 +49,10 @@
         1,
         null,
         1,
+        null,
+        1,
+        null,
+        null,
         1,
         null,
         null,
@@ -63,7 +72,7 @@
         null,
         null,
         1,
-        52,
+        54,
         null,
         null,
         null
@@ -118,7 +127,7 @@
         1,
         null,
         1,
-        11,
+        12,
         null,
         null,
         null
@@ -178,6 +187,45 @@
         null,
         null
       ],
+      "/Users/emilydowdle1/Dropbox/turing_work/idea_box/app/controllers/admin/images_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
       "/Users/emilydowdle1/Dropbox/turing_work/idea_box/app/controllers/welcome_controller.rb": [
         1,
         1,
@@ -217,7 +265,6 @@
         null
       ]
     },
-
-    "timestamp": 1446850745
+    "timestamp": 1446863205
   }
 }
