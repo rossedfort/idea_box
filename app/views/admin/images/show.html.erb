@@ -1,7 +1,7 @@
 <div id="image-details">
   <h2>Image: <%= @image.name %></h2>
   <p>
-    URL: <%= @image.url %>
+    <img src="<%= @image.url %>" alt="img" width="50%" height="50%" />
   </p>
   <p>
     Created by: <%= @image.user.first_name %>

@@ -37,7 +37,8 @@ class Seed
     50.times do |_i|
       idea = Idea.create(name: Faker::Lorem.word,
                          description: Faker::Lorem.sentence,
-                         user_id: rand(1..5)
+                         user_id: rand(1..5),
+                         category_id: 1
                         )
 
       puts "#{idea.name} created"
@@ -46,7 +47,7 @@ class Seed
 
   def generate_categories
     10.times do |i|
-      category = Category.create(name: Faker::Lorem.word,
+      category = Admin::Category.create(name: Faker::Lorem.word,
                                  description: Faker::Lorem.sentence)
 
       puts "#{category.name} created!"
