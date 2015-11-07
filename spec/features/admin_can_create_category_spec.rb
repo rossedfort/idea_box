@@ -34,6 +34,8 @@ feature "Admin Category Creation" do
 
     expect(current_path).to eq user_path(admin.id)
 
+    visit admin_categories_path
+
     click_link "Create New Category"
 
     expect(page).to have_content("Create a New Category")
