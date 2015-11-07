@@ -23,6 +23,11 @@
         1,
         null
       ],
+      "/Users/emilydowdle1/Dropbox/turing_work/idea_box/app/models/image.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/emilydowdle1/Dropbox/turing_work/idea_box/app/models/user.rb": [
         1,
         1,
@@ -176,6 +181,6 @@
         null
       ]
     },
-    "timestamp": 1446840768
+    "timestamp": 1446861425
   }
 }
