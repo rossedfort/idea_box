@@ -9,8 +9,9 @@
 class Seed
   def initialize
     generate_users
-    generate_ideas
     generate_categories
+    generate_images
+    generate_ideas
   end
 
   def generate_users
@@ -38,7 +39,8 @@ class Seed
       idea = Idea.create(name: Faker::Lorem.word,
                          description: Faker::Lorem.sentence,
                          user_id: rand(1..5),
-                         category_id: 1
+                         category_id: rand(1..10),
+                         image_id: rand(1..10)
                         )
 
       puts "#{idea.name} created"
@@ -48,9 +50,19 @@ class Seed
   def generate_categories
     10.times do |i|
       category = Admin::Category.create(name: Faker::Lorem.word,
-                                 description: Faker::Lorem.sentence)
+                                        description: Faker::Lorem.sentence,
+                                        user_id: 1)
 
-      puts "#{category.name} created!"
+      puts "#{category.name} category created!"
+    end
+  end
+
+  def generate_images
+    10.times do |i|
+      image = Admin::Image.create(name: Faker::Lorem.word,
+                                  url: Faker::Avatar.image,
+                                  user_id: 1,
+                                  )
     end
   end
 end

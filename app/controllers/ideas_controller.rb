@@ -14,6 +14,8 @@ class IdeasController < ApplicationController
 
   def show
     @idea = Idea.find(params[:id])
+    @category = Admin::Category.find(@idea.category_id)
+    @image = Admin::Image.find(@idea.image_id)
   end
 
   def index
@@ -44,6 +46,6 @@ class IdeasController < ApplicationController
   private
 
   def idea_params
-    params.require(:idea).permit(:name, :description, :category_id)
+    params.require(:idea).permit(:name, :description, :category_id, :image_id)
   end
 end
