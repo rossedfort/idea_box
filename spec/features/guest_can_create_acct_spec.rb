@@ -2,7 +2,7 @@ require 'rails_helper'
 
 feature "Signing up" do
 
-  scenario "Signing up with correct creditionals" do
+  scenario "Signing up with correct creditials" do
     visit '/users/new'
     within("#signup-form") do
       fill_in 'First name', :with => 'Ross'
@@ -16,7 +16,7 @@ feature "Signing up" do
     expect(page).to have_content 'Hello Ross!'
   end
 
-  scenario "Signing up with correct creditionals from root path" do
+  scenario "Signing up with correct creditials from root path" do
     visit root_path
 
     within("#login") do
