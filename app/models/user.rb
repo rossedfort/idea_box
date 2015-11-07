@@ -8,8 +8,12 @@ class User < ActiveRecord::Base
     validates :password, presence: true
 
     has_many :ideas
+
     has_many :categories,
              :class_name => "Admin::Category"
 
+    has_many :images,
+             :class_name => "Admin::Image"
+             
     enum role: %w(default admin)
 end

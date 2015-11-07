@@ -20,6 +20,18 @@
         1,
         null
       ],
+      "/Users/emilydowdle1/Dropbox/turing_work/idea_box/app/models/admin/image.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/emilydowdle1/Dropbox/turing_work/idea_box/app/models/idea.rb": [
+      "/Users/emilydowdle1/Dropbox/turing_work/idea_box/app/models/idea.rb": [
       "/Users/rossedfort/code/mod_2/projects/idea_box/app/models/idea.rb": [
         1,
         1,
@@ -39,6 +51,10 @@
         1,
         null,
         1,
+        null,
+        1,
+        null,
+        null,
         1,
         null,
         null,
@@ -58,7 +74,7 @@
         null,
         null,
         1,
-        52,
+        54,
         null,
         null,
         null
@@ -113,7 +129,7 @@
         1,
         null,
         1,
-        11,
+        12,
         null,
         null,
         null
@@ -173,7 +189,52 @@
         null,
         null
       ],
+<<<<<<< HEAD
+      "/Users/emilydowdle1/Dropbox/turing_work/idea_box/app/controllers/admin/images_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/emilydowdle1/Dropbox/turing_work/idea_box/app/controllers/welcome_controller.rb": [
+||||||| merged common ancestors
+      "/Users/emilydowdle1/Dropbox/turing_work/idea_box/app/controllers/welcome_controller.rb": [
+=======
       "/Users/rossedfort/code/mod_2/projects/idea_box/app/controllers/welcome_controller.rb": [
+>>>>>>> master
         1,
         1,
         2,
@@ -212,6 +273,12 @@
         null
       ]
     },
+<<<<<<< HEAD
+    "timestamp": 1446863205
+||||||| merged common ancestors
+    "timestamp": 1446850745
+=======
     "timestamp": 1446862760
+>>>>>>> master
   }
 }
