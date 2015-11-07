@@ -5,9 +5,17 @@
     <%= f.label :description %>
     <%= f.text_field :description %>
     <%= f.label :category %>
-    <div class="input-field browser-default">
-      <%= f.collection_select :category_id, Admin::Category.all, :id, :name, {}, {class: "browser-default"} %>
+    <div class="row">
+      <div class="col-s6">
+        <div class="input-field browser-default">
+          <%= f.collection_select :category_id, Admin::Category.all, :id, :name, {}, {class: "browser-default", id: "categorySelect"} %>
+        </div>
+        <%= f.label :image %>
+        <div class="input-field browser-default">
+          <%= f.collection_select :image_id, Admin::Image.all, :id, :name, {}, {class: "browser-default", id: "imageSelect"} %>
+        </div>
+      </div>
     </div>
-    <%= f.submit 'Create Idea' %>
+      <%= f.submit 'Create Idea' %>
   <% end %>
 </div>

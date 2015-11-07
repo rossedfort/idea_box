@@ -4,7 +4,7 @@
 
 <div id="ideas">
   <% @ideas.each_with_index do |idea, index| %>
-  <h5>Idea <%= index %> </h5>
+  <h5><%= link_to "Idea #{index + 1}", idea_path(index + 1) %> </h5>
   <ul>
   <li>Name: <%= idea.name %></li>
   <li>Description: <%= idea.description %></li>

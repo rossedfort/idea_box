@@ -42,6 +42,7 @@ group :development, :test do
   gem 'rspec-mocks'
   gem 'simplecov'
   gem 'faker'
+  gem 'database_cleaner'
 end
 
 group :development do

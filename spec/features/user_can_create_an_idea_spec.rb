@@ -15,6 +15,14 @@ feature 'create idea' do
       fill_in 'Password', :with => 'password'
     end
     click_button 'Sign in'
+
+    cool = Admin::Category.create(name: 'Cool',
+                           description: 'Only cool ideas here',
+                           user_id: user.id)
+
+    image = Admin::Image.create(name: 'cat',
+                                url: 'https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg',
+                                user_id: user.id)
   end
 
   scenario 'creating idea while signed in' do
@@ -23,6 +31,8 @@ feature 'create idea' do
     within('#new-idea') do
       fill_in 'Name', with: 'Great Idea'
       fill_in 'Description', with: 'What a great idea'
+      find('#categorySelect').find(:xpath, 'option[1]').select_option
+      find('#imageSelect').find(:xpath, 'option[1]').select_option
     end
     click_button 'Create Idea'
 
@@ -40,6 +50,8 @@ feature 'create idea' do
     within('#new-idea') do
       fill_in 'Name', with: 'Great Idea'
       fill_in 'Description', with: 'What a great idea'
+      find('#categorySelect').find(:xpath, 'option[1]').select_option
+      find('#imageSelect').find(:xpath, 'option[1]').select_option
     end
     click_button 'Create Idea'
 
