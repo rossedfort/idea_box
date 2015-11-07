@@ -35,6 +35,12 @@ class IdeasController < ApplicationController
     end
   end
 
+  def destroy
+    Idea.destroy(params[:id])
+    flash[:message] = 'Idea Deleted'
+    redirect_to ideas_path
+  end
+
   private
 
   def idea_params
