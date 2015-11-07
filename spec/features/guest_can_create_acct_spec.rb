@@ -12,7 +12,7 @@ feature "Signing up" do
     end
 
     click_button 'Sign up'
-    save_and_open_page
+
     expect(page).to have_content 'Thanks for signing up!'
   end
 
