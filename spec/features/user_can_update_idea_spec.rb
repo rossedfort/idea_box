@@ -31,16 +31,16 @@ feature 'edit idea' do
   end
 
   scenario "user can update an idea" do
-    visit edit_idea_path(2)
+    visit edit_idea_path(Idea.last.id)
 
-    within('#edit-idea')
-    fill_in 'Name', with: "Not a great idea"
-    fill_in 'Description', with: "Probably the worst you've had"
-
+    within('#edit-idea') do
+      fill_in 'Name', with: "Not a great idea"
+      fill_in 'Description', with: "Probably the worst you've had"
+    end
     click_button 'Update Idea'
 
     expect(page).to have_content 'Idea Updated!'
     expect(page).to have_content 'Not a great idea'
-    expect(page).to have_content "Probalbly the worst you've had"
+    expect(page).to have_content "Probably the worst you've had"
   end
 end

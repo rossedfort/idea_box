@@ -27,6 +27,7 @@ class IdeasController < ApplicationController
   def update
     @idea = Idea.find(params[:id])
     if @idea.update(idea_params)
+      flash[:message] = 'Idea Updated!'
       redirect_to @idea
     else
       flash.now[:errors] = @idea.errors.full_messages.join(", ")
