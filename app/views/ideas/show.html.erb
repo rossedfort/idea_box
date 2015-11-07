@@ -1,11 +1,12 @@
 <div class="center">
   <h1>Your Idea!</h1>
+  
+<ul>
+  <li>Name: <%= @idea.name %></li>
+  <li>Description: <%= @idea.description %></li>
+</ul>
 
-  <ul class="big-text">
-    <li>Title: <%= @idea.name %></li>
-    <li>Description: <%= @idea.description %>  </li>
-    <% @idea.admin_categories.each do |category| %>
-      <%= category.name %>
-    <% end %>
-  </ul>
-</div>
+<p>
+  <%= link_to 'Edit Idea', edit_idea_path(@idea) %> |
+  <%= link_to 'Delete Idea', idea_path(@idea), method: :delete %>
+</p>
