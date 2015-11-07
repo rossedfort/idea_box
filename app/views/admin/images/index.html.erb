@@ -1,0 +1,8 @@
+<%= link_to "Create New Image", new_admin_image_path %>
+
+<h1>All Images</h1>
+
+<% @images.each do |img| %>
+  <h4><%= link_to img.name, admin_image_path(img.id) %></h4></br>
+  <%= link_to "Delete", admin_image_path(img.id), method: :delete %>
+<% end %>
