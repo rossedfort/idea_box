@@ -12,10 +12,10 @@ class Seed
   end
 
   def generate_users
-    me = User.create(first_name: 'Ross',
-                     last_name: 'Edfort',
-                     username: 'rossedfort',
-                     password: 'password',
+    me = User.create(first_name: 'Admin',
+                     last_name: 'Admin',
+                     username: 'admin',
+                     password: 'admin',
                      role: 1)
 
     puts "#{me.username} - #{me.password} ADMIN created!"
