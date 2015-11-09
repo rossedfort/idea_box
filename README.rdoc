@@ -1,6 +1,6 @@
 == README - IdeaBox
 
-Idea Box is a simple ruby on rails web app for users to store their awesome ideas! Simply create an account and login to get started. 
+Idea Box is a simple ruby on rails web app for users to store their awesome ideas! Simply create an account and login to get started. Choose from a set of preloaded categories and images for your ideas.
 
 * Idea box uses Rspec as it's testing suite. Run `rspec` from the project directory to run all the tests
 
